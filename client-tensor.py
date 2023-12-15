@@ -17,13 +17,13 @@ def make_prediction(inputs):
 def main():
     st.title('Predictor de ubicaciones geográficas')
 
-    st.header('Coordenadas para Kazajistán')
-    kazakhstan_lat = st.number_input('Ingrese la latitud de Kazajistán:', value=48.0196)
-    kazakhstan_lon = st.number_input('Ingrese la longitud de Kazajistán:', value=66.9237)
+    st.header('Coordenadas para Paris')
+    kazakhstan_lat = st.number_input('Ingrese la latitud de Paris:', value=48.0196)
+    kazakhstan_lon = st.number_input('Ingrese la longitud de Paris:', value=66.9237)
 
-    st.header('Coordenadas para Brasilia')
-    brasilia_lat = st.number_input('Ingrese la latitud de Brasilia:', value=-15.7801)
-    brasilia_lon = st.number_input('Ingrese la longitud de Brasilia:', value=-47.9292)
+    st.header('Coordenadas para Los Angeles')
+    brasilia_lat = st.number_input('Ingrese la latitud de Los Angeles:', value=-15.7801)
+    brasilia_lon = st.number_input('Ingrese la longitud de Los Angeles:', value=-47.9292)
 
     if st.button('Predecir'):
         inputs = [
@@ -33,10 +33,10 @@ def main():
         predictions = make_prediction(inputs)
 
         if predictions:
-            st.write("\nPredicciones para Kazajistán:")
+            st.write("\nPredicciones para Paris:")
             st.write(predictions['predictions'][0])
 
-            st.write("\nPredicciones para Brasilia:")
+            st.write("\nPredicciones para Los Angeles:")
             st.write(predictions['predictions'][1])
 
 if __name__ == '__main__':
