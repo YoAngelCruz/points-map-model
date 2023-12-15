@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import tensorflow as tf
 
-def circulo(num_datos=700000, R=1, centro_lat=0, centro_lon=0):
+def circulo(num_datos=740000, R=1, centro_lat=0, centro_lon=0):
     pi = np.pi
     theta = np.random.uniform(0, 2 * pi, size=num_datos)
 
