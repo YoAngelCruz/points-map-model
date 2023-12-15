@@ -27,7 +27,7 @@ jobs:
         run: pip install pandas
 
       - name: run model 
-        run: python points_inmap.py
+        run: python points.py
 
       - name: docker login
         env:
