@@ -18,8 +18,8 @@ def circulo(num_datos=500000, R=1, centro_lat=0, centro_lon=0):
     df = pd.DataFrame({'lat': y, 'lon': x})
     return df
 
-datos_la = circulo(num_datos=100, R=2, centro_lat=-15.7801, centro_lon=-47.9292)
-datos_paris = circulo(num_datos=100, R=0.5, centro_lat=48.0196, centro_lon=66.9237)
+datos_la = circulo(num_datos=100, R=2, centro_lat=34.05223, centro_lon=-118.24368)
+datos_paris = circulo(num_datos=100, R=0.5, centro_lat=48.85341, centro_lon=2.3488)
 
 X = np.concatenate([datos_la, datos_paris])
 X = np.round(X, 6)
