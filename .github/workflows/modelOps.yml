@@ -27,7 +27,7 @@ jobs:
         run: pip install pandas
 
       - name: run model 
-        run: python points.py
+        run: python points-graphs.py
 
       - name: docker login
         env:
